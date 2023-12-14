@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="stylesheet" href="../CSS/navigationbarblack.css">
+</head>
+<body>
+    <div class="navigation bar">
+        <a href="Home.html"><img class="logo" src="../Images/logoblack.png" alt="logo" width="110" height="27"></a>
+            <ul id="navigation">
+                <li class="parts"><a href="buy_products.html">Products</a></li>
+				<li class="parts"><a href="gallery.html">Gallery</a></li>
+				<li class="parts"><a href="form.html">Query Form</a></li>
+				<li class="parts"><a href="svg.html">Sitemap</a></li>
+				<li class="parts"><a href="Quiz.html">Quiz</a></li>
+				<li class="parts"><a href="StudentDetails.html">About</a></li>
+				<li class="parts"><a href="News.html">News</a></li>
+            </ul>
+        </div>
+    <div id="overlay">
+        <form  name="query" method="post" enctype="text/plain"> 
+            <div id="form1">
+                <h1>Contact Us</h1>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <small class="error"></small>
+    
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Your email">
+                <small class="error"></small>
+    
+                <label for="sub">Subject</label>
+                <select name="sub" id="sub">
+                    <option value="default" disabled selected>select your subject</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="price">Price</option>
+                    <option value="technical">Technical</option>
+                    <option value="review">Review</option>
+                    <option value="complain">Complain</option>
+    
+                </select>
+    
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message" rows="6"></textarea>
+                <small class="error"></small>
+    
+                <div class="center">
+                    <input type="button" value="Send Message" onclick="showInbox()">
+                    <p id="success"></p>
+                </div>
+            </div>
+
+            
+            <div id="querymessage"style="display: none;" > 
+                <div >
+                    <h1>summary</h1>
+                    <p>Name -  <span id="name1"></span></p>
+                    <p>Email -  <span id="email1"></span></p>
+                    <p>Subject -  <span id="subject1"></span></p>
+                    <p>Message -  <span id="message1"></span></p>
+                </div>
+                <input class="submit1" type="submit" value="sent" id="submitid" onclick="submitmessage()">
+                <input class="edit1" type="button" value="edit" id="editid" onclick="editmessage()">
+            </div>
+        </form>
+    </div> 
+    <a class="icon" href="Imesha.html"><img src ="../Images/editor.jpg" class="editor-image-3" alt="editor" width="70" height="70"></a>
+    <script src="../JavaScript/form.js"></script>
+</body> 
+</html>

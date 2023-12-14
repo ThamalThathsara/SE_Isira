@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="../CSS/styles.css">
+		<link rel="stylesheet"  href="../CSS/menu.css">
+		<link rel="stylesheet"  href="../CSS/modalimage.css">
+		<link rel="stylesheet"  href="../CSS/navigationbar.css">
+
+		<title>Gallery</title>	
+	</head>
+
+	<body>
+		<!--Logo-->
+		<a href="Home.html"><img class="logo" src="../Images/logo.png"  width="110" height="27" alt="Website logo"></a>
+		<!--Navigation bar-->
+		<ul id="navigation">
+			<li class="parts"><a href="buy_products.html">Products</a></li>
+			<li class="parts"><a href="gallery.html">Gallery</a></li>
+			<li class="parts"><a href="form.html">Query Form</a></li>
+			<li class="parts"><a href="svg.html">Sitemap</a></li>
+			<li class="parts"><a href="Quiz.html">Quiz</a></li>
+			<li class="parts"><a href="StudentDetails.html">About</a></li>
+			<li class="parts"><a href="News.html">News</a></li>
+		</ul>
+		<!--Back to top anchor tag-->
+		<a id="top"></a>
+		<div class="main" id="main">
+			<!--Title image-->
+			<img id="titleimage" src="../Images/agriculture-2.jpg" alt="title image">
+			<h1 class="heading">Agriculture Gallery</h1>
+			<p id="description">IMAGES OF SOME AGRICULTURAL SITES</p>
+			<!--Text to show the menu for background and text colour-->
+			<p id="textcol">Text Colour</p>
+			<p id="backgroundcol">Background Colour</p>
+			<!--Class to keep the menu on the side-->
+			<div class="textbox">
+				<div class ="dropdown">
+					<!--the menu box-->
+					<div class="displaying">	
+						<span class="selected">White</span>
+						<div class="caret"></div>
+					</div>
+					<!--Text colour list-->
+					<ul class="menu">
+						<li class="active" id="whitetext">White</li>
+						<li id="blacktext">Black</li>
+						<li id="bluetext">Blue</li>
+						<li id="redtext">Red</li>
+						<li id="greentext">Green</li>
+					</ul>
+				</div>
+			</div>
+			<!--Class to keep the menu on the side-->
+			<div class="backgroundbox">
+				<div class ="dropdown">
+					<!--the menu box-->
+					<div class="displaying">	
+						<span class="selected">White</span>
+						<!--class to create caret-->
+						<div class="caret"></div>
+					</div>
+					<!--background colour list-->
+					<ul class="menu" id="backgroundcolor">
+						<li class="active" id="whitebg">White</li>
+						<li id="blackbg">Black</li>
+						<li id="bluebg">Blue</li>
+						<li id="redbg">Red</li>
+						<li id="greenbg">Green</li>	
+					</ul>
+				</div> 
+			</div>
+			<div class="container">
+				<!--Class which contains all the images-->
+				<div class="images" id="images">
+					<img src="../Images/cornfield.jpg" alt="<h2>Corn Field</h2><p>Maize is primarily a rainfed crop cultivated in the maha season in both settled and shifting types of highland cultivation. It is an important crop in the districts Anuradhapura, Ampara and Badulla.</p>"/>
+					<img src="../Images/isirapaddy.jpg" alt="<h2>Paddy Field</h2><p>This image is an original image taken by one of our group members of his paddy field</p>"/>
+					<img src="../Images/coconutfield.jpg" alt="<h2>Coconut Field</h2>
+					<p>Coconut is a prime and valuable crop to Sri Lankans and its uses are many and varied. They include coconut milk for cooking purposes, timber for house-building and furniture, the leaves for thatching roofs, fibre for making ropes and firewood.</p>"/>
+					<img src="../Images/PaddyCultivation.jpg" alt="<h2>Paddy Field</h2>
+					<p>Rice happens to be the most prominent cultivation in Sri Lanka which occupies 0.77 miion hectares of land. During Maha season, the country cultivates an average of 560,000 hectares of land whereas during Yala it is 310,000 hectares of land.</p>"/>
+					<img src="../Images/teaplantation.jpg" alt="<h2>Tea Plantation</h2>
+					<p> Tea production is one of the main sources of foreign exchange for Sri Lanka, and accounts for 2% of GDP, contributing over US$1.3 billion in 2021 to the economy of Sri Lanka.</p>"/>
+					<img src="../Images/rubberplantation.jpg" alt="<h2>Rubber Plantation</h2>
+					<p>Sri Lankan natural rubber has acquired the status of an industrial raw material with a global significance. Sri Lankan rubber plantations mainly consist of many small holders as well as bigger rubber plantations that are managed by well established companies.</p>"/>
+					
+					
+				</div>
+				<!--pop up image -->
+				<div class="modal">
+					<span class="close">&times;</span>
+					<div class="modalContent">
+						<img src="#" class="modalImg" alt="#" />
+						<span class="modalTxt" id="modaltext"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="icons" href="#top"><img id="top_icon" src="../Images/top.png" alt="#" width="70" height="70"></a>
+		<!--Link to page editor-->
+		<a class="editor" href="Farwaiz.html"><img src="../Images/editor.jpg" alt="page editor" width="70" height="70"></a>
+
+		<script src="galleryjs.js">
+		</script>
+	</body>
+</html>

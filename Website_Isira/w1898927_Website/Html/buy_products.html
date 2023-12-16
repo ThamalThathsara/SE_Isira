@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>TITLE</title>
-		<link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="../Images/">
 		<link rel="stylesheet" href="../CSS/style.css">
 		<link rel= "stylesheet" href="../CSS/navigationbarblack.css">
 	</head>
@@ -12,13 +12,10 @@
 	<div class="navigation bar">
 	<a href="../Html/Home.html"><img class="logo" src="../Images/logoblack.png" alt="logo" width="110" height="27"></a>
 		<ul id="navigation">
-			<li class="parts"><a href="buy_products.html">Products</a></li>
-			<li class="parts"><a href="gallery.html">Gallery</a></li>
-			<li class="parts"><a href="form.html">Query Form</a></li>
-			<li class="parts"><a href="svg.html">Sitemap</a></li>
-			<li class="parts"><a href="Quiz.html">Quiz</a></li>
-			<li class="parts"><a href="StudentDetails.html">About</a></li>
-			<li class="parts"><a href="News.html">News</a></li>
+			<li class="parts"><a href="Home.html">Home</a></li>
+			<li class="parts"><a href="buy_products.html">Browse Products</a></li>
+			<li class="parts"><a href="form.html">Feedback</a></li>
+			<li class="parts"><a href="StudentDetails.html">About Us</a></li>
 		</ul>
 	</div>
 	
@@ -222,7 +219,8 @@
 			let slideIndex = 0;
 			showSlides();
 
-			function showSlides() {
+			function showSlides() 
+			{
 				let i;
 				let slides = document.getElementsByClassName("mySlides");
 				let dots = document.getElementsByClassName("dot");

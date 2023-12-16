@@ -5,6 +5,7 @@ body {
 #navigation li{
 	display: inline;
 	text-decoration: none;
+	margin: 0 20px;
 }
 #navigation a{
 	text-decoration: none;
@@ -23,7 +24,7 @@ body {
 	margin-left: 51%;
 	top: 1%;
 	font-family: sans-serif;
-	color: black;
+	color: rgb(17, 5, 5);
 	z-index: 1;
 }
 .logo{
@@ -35,3 +36,9 @@ body {
 body {
 	margin:0;
 }
+.navigation li::after
+{
+
+
+}
+

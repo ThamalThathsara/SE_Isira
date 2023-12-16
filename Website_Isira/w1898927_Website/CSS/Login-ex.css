@@ -75,7 +75,7 @@ h2{
 }
 .inputBox{
     position: relative;
-    width: 300px;
+    width: 350px;
     margin-top: 35px;
 }
 .inputBox input{
@@ -96,14 +96,15 @@ input[type="submit"]{
     outline: none;
     background: #45f3ff;
     padding: 5px;
-    margin-top: 90px;
+    margin-top: 40px;
+    border-radius: 90px;
     font-weight: 600;
     cursor: pointer;
 }
 input[type="submit"]:active
 {
     background: linear-gradient(90deg,#45f3ff,#d9138a);
-    opacity: 0.08;
+    opacity: 0.8;
 }
 .inputBox span{
     position: absolute;
